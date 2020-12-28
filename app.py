@@ -28,4 +28,4 @@ def index_page(player_id=66):
 
 if __name__ == "__main__":
     # socketio.run(app)
-    app.run()
+    app.run('0.0.0.0')

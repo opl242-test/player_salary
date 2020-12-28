@@ -22,6 +22,3 @@ def index_page(player_id=66):
         'index.html',
         predicted_salary=predicted_salary
     )
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0')

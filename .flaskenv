@@ -1,2 +1,2 @@
-FLASK_APP=player_salary
+FLASK_APP=player_salary_app
 FLASK_ENV=development

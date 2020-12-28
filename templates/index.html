@@ -1,0 +1,18 @@
+<!doctype html>
+
+<body background="back.jpg">
+
+    <title>Ice Hockey players salary estimator</title>
+
+    <form action="{{ url_for('index_page') }}" method=post>
+        <dl>
+            <dt>Enter player_id: <br>
+            <dd><textarea name=player_id rows=1 cols=40>{{ player_id }}</textarea>
+            <dd><input type=submit value="Estimate salary">
+        </dl>
+    </form>
+
+
+    <br>Recomended salary:<br>
+    {{ predicted_salary }}
+</body>

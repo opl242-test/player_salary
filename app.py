@@ -1,9 +1,9 @@
 from classifier import Classifier
 from flask import Flask, render_template, request
-from flask_socketio import SocketIO
+# from flask_socketio import SocketIO
 
 app = Flask(__name__)
-socketio = SocketIO(app)
+# socketio = SocketIO(app)
 
 # print("Load classifier")
 classifier = Classifier()
@@ -27,4 +27,5 @@ def index_page(player_id=66):
     )
 
 if __name__ == "__main__":
-    socketio.run(app)
+    # socketio.run(app)
+    app.run()
